@@ -1,0 +1,404 @@
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #00acc1;
+  color: #fff;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  font-size: 0.9em;
+  box-shadow: 0 8px 8px 4px #ccc;
+  box-sizing: border-box;
+}
+
+.sidebar a {
+  display: block;
+  color: #fff;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.sidebar a.active {
+  font-size: 2em;
+  font-weight: 700;
+  color: #fff;
+  padding-top: 8px;
+  border-bottom: 1px solid #eee;
+  font-family: "Ubuntu", Tahoma, sans-serif;
+  text-shadow: 0 1px 1px #666, -1px -1px 2px #666;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: #fff;
+}
+
+.content {
+  margin-left: 200px;
+  padding: 1px 4%;
+}
+
+.pcard {
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 2px;
+  margin-bottom: 20px;
+  padding: 2px;
+  background-color: #fff;
+}
+
+.container h3 {
+  margin-top: 25px;
+}
+
+.container h2 {
+  margin-bottom: 10px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 500px) {
+  .sidebar {
+    padding: 8px;
+    width: 100%;
+    position: relative;
+    border-bottom: 2px solid #fff;
+    background: linear-gradient(to bottom, #007e8f 0%, #19bbbb 100%);
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 2px;
+  }
+
+  .sidebar a {
+    padding: 10px 17px;
+    float: none;
+  }
+
+  .topright {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    border-left: 1px solid #00acc1;
+  }
+
+  .sidebar a.active {
+    color: #fff;
+    padding-top: 2px;
+    padding-left: 5%;
+    font-size: 2em;
+    text-shadow: 0 1px 1px #888, 0 -1px 1px #888;
+    border-bottom: 2px solid #fff;
+  }
+
+  div.content {
+    margin-left: 0;
+    padding: 1px;
+  }
+
+  .pcard {
+    margin: 0;
+  }
+}
+
+.scard {
+  border: solid 1px #ccc;
+  transition: 0.3s;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.con {
+  padding: 2px 12px;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.button {
+  background-color: #ddd;
+  border: 1px solid #00acc1;
+  color: #000;
+  padding: 10px 6px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.8em;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  width: 98%;
+}
+
+button:hover {
+  background-color: #222;
+  color: #fff;
+}
+
+.deletebutton {
+  background-color: #bb1919;
+  color: #fff;
+  float: right;
+  padding: 3px;
+  border-radius: 4px;
+  font-size: 0.5em;
+  cursor: pointer;
+}
+
+.delservice {
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 1px;
+  background-color: #bb1919;
+  color: #fff;
+  box-shadow: 0 4px 8px ddd;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.6em;
+  cursor: pointer;
+  padding: 8px;
+  float: right;
+  margin: 5px 5px 5px -5px;
+  max-width: 46%;
+}
+
+.updateservice {
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 1px;
+  background-color: #e39133;
+  color: #fff;
+  box-shadow: 0 4px 8px ddd;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.6em;
+  cursor: pointer;
+  padding: 8px;
+  float: right;
+  max-width: 47%;
+  margin: 5px 5px 5px -5px;
+}
+
+.saveservice {
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 1px;
+  background-color: #00acc1;
+  color: #fff;
+  box-shadow: 0 4px 8px #ddd;
+  text-align: center;
+  display: inline-block;
+  font-size: 0.6em;
+  cursor: pointer;
+  padding: 8px;
+  float: right;
+  margin: 5px 5px 5px -5px;
+  width: 99%;
+}
+
+.input-group {
+  display: table;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 96em;
+  margin: 10px 0;
+}
+
+.input-group > div {
+  display: table-cell;
+  border: 1px solid #ddd;
+  vertical-align: middle;
+}
+
+.input-group-title {
+  background: #eee;
+  color: #333;
+  font-size: 0.8em;
+  padding: 0 7px;
+  width: 20%;
+  min-width: 85px;
+}
+
+.input-group-buttin {
+  background-color: #ddd;
+  color: #222;
+  border: none;
+  font-size: 0.8em;
+  padding: 12px 7px;
+  text-align: center;
+}
+
+.input-group-buttin:hover {
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+.input-group-area {
+  width: 100%;
+}
+
+.input-group-area-limit {
+  max-width: 100%;
+}
+
+.input-group input {
+  box-sizing: border-box;
+  border: 0;
+  display: inline-block;
+  width: 100%;
+  min-width: 100px;
+  padding-top: 9px;
+  padding-bottom: 12px;
+  padding-left: 7px;
+  font-size: 1em;
+  outline: medium none;
+}
+
+.input-group select {
+  box-sizing: border-box;
+  border: 0;
+  display: block;
+  width: 100%;
+  padding: 7px;
+  margin: 5px 0;
+  background-color: #fff;
+  font-size: 1em;
+}
+
+.input-group-date {
+  display: inline-block;
+  width: 50%;
+  min-width: 100px;
+  padding: 0;
+  text-align: right;
+  font-size: 1em;
+}
+
+.input-group-alert {
+  position: relative;
+  padding-left: 20%;
+  margin-top: -25px;
+  margin-right: 10px;
+  padding-top: 0;
+  color: #f13434ec;
+  float: right;
+  font-size: 0.65em;
+}
+
+.imageHint {
+  margin: 5px;
+  color: gray;
+  font-size: 0.6em;
+}
+
+.inputfile {
+  border: 1px solid #eee;
+  border-radius: 3px;
+  padding: 15px 18px;
+  color: red;
+  outline: none;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  box-shadow: 0 0 2px #00acc1;
+}
+
+ul {
+  font-size: 0.7em;
+  margin-right: 10px;
+}
+
+ul b {
+  color: #f13434ec;
+}
+
+::-webkit-input-placeholder {
+  font-size: 0.9em;
+  color: #ddd;
+}
+
+:-ms-input-placeholder {
+  font-size: 0.8em;
+  color: #ddd;
+}
+
+::placeholder {
+  font-size: 0.8em;
+  color: #ddd;
+}
+
+.profileImage {
+  width: 23%;
+  padding: 3px;
+  margin: 1%;
+  border: 1px solid gray;
+}
+
+.serviceImage {
+  width: 23%;
+  padding: 3px;
+  margin: 1%;
+  border: 1px solid gray;
+}
+
+img:focus {
+  outline: 2px solid #333;
+}
+
+.serviceImage:hover {
+  width: 23%;
+  padding: 1px;
+  margin: 1%;
+  border: 3px solid #333;
+  cursor: pointer;
+}
+
+.serviceImageSelected {
+  width: 23%;
+  padding: 1px;
+  border: 4px solid #000;
+  margin: 1%;
+}
+
+.img-wrap {
+  position: relative;
+}
+
+.img-wrap .delete {
+  color: #f13434ec;
+  opacity: 0.1;
+  text-shadow: 1px 1px 5px #000;
+  position: absolute;
+  font-size: 2em;
+  right: 14px;
+}
+
+.col-6 ul {
+  color: #fff;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 45%;
+  left: 34%;
+}
+
+.mapLayer {
+  width: 100%;
+  height: 300px;
+  border: 1px solid;
+}
